@@ -1,0 +1,24 @@
+{
+    "presets": [
+        [
+            "@babel/react"
+        ],[
+            "@babel/env"
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-transform-classes",
+        [
+            "babel-plugin-root-import",
+            {
+                "rootPathSuffix": "client"
+            }
+        ],
+        ["@babel/plugin-transform-runtime",
+            {
+              "regenerator": true
+            }
+        ]
+    ]
+}
